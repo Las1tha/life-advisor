@@ -1,0 +1,48 @@
+:root{
+    /*colors*/
+    --primary-color:#6366f1;
+    --secondary-color:#ec4899;
+    --primary-dark:#4f46e5;
+    --accent-color:#f59e0b;
+    --danger-color:#ef4444;
+    --warning-color:#f59e0b;
+    --success-color:#10b981;
+
+    --bg-primary:#0f172a;
+    --bg-secondary:#1e293b;
+    --bg-teritary:#334155;
+    --bg-card:#1e293b;
+    --bg-card-hover:#334155;
+
+
+    --text-primary:#f8fafc;
+    --text-secondary:#cbd5e1;
+    --text-muted:#94a3b8;
+
+    /* borders */
+    --border-color:#334155;
+    --border-radius:15px;
+    --border-radius-lg:18px;
+
+    /* spacing */
+    --spacing-xs:0.25rem;
+    --spacing-sm:0.5rem;
+    --spacing-md:1rem;
+    --spacing-lg:1.5rem;
+    --spacing-xl:2rem;
+    --spacing-2xl:3rem;
+
+    /* font size */
+    --font-size-xs:0.75rem;
+     --font-size-sm:0.85rem;
+      --font-size-base:1rem;
+       --font-size-lg:1.1rem;
+        --font-size-xl:1.25rem;
+         --font-size-2xl:1.8rem;
+          --font-size-3xl:2.5rem;
+   
+          /* transition */
+--transition-fast:150ms ease-in-out ;
+--transition-normal:250ms ease-in-out;
+--transition-slow:350ms ease-in-out;
+}
