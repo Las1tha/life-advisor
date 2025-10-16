@@ -104,7 +104,7 @@ export const ADVICE_DATA = {
             "Communicate feelings only through custom-made board games.",
             "Insist on wearing matching outfits that you design yourself using finger paints."
         ],
-        [LEVELS.UNHINGED]: [
+        [SERIOUSNESS_LEVELS.UNHINGED]: [
             "Establish a relationship court where all disputes are settled by trial by combat with pool noodles.",
             "Replace all furniture in your home with bouncy castles for 'relationship flexibility.'",
             "Communicate only through messages written in skywriting by trained pigeons.",
