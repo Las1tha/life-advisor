@@ -34,6 +34,18 @@ const AdviceCard = ({advice, isGenerating, onGenerateAdvice, onReset}) => {
             <button
              className='btn btn-primary generate-btn'
              onClick={onGenerateAdvice}
+             disabled={isGenerating}
+             aria-label='Generate new advice'>
+                {isGenerating ? (
+                    <>
+                   
+                    </>
+                ):(
+                    'Generate Advice'
+                )}
+
+
+             </button>
         </div>
         </div>
     )
