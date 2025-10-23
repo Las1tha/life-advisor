@@ -30,6 +30,11 @@ const AdviceCard = ({advice, isGenerating, onGenerateAdvice, onReset}) => {
                 </div>
            )}
         </div>
+        <div className='advice-actions'>
+            <button
+             className='btn btn-primary generate-btn'
+             onClick={onGenerateAdvice}
+        </div>
         </div>
     )
 }
