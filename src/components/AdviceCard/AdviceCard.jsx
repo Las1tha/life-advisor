@@ -1,4 +1,4 @@
-import'/AdviceCard.css';
+import'./AdviceCard.css';
 
 const AdviceCard = ({advice, isGenerating, onGenerateAdvice, onReset}) => {
     return(
@@ -12,41 +12,54 @@ const AdviceCard = ({advice, isGenerating, onGenerateAdvice, onReset}) => {
                 </div>
            ): advice ? (
             <div className='advice-display animate-fade-in'>
-                <div className='advice-icon'></div>
+                <div className='advice-icon'>📢</div>
                 <blockquote className='advice-text'>
                     "{advice}"
                 </blockquote>
                 <div className='advice-disclaimer'>
-                    <small> please don't actually  follow it</small>
+                    <small> ⚠️ please don't actually  follow it</small>
                 </div>
                 </div>
 
            ):(
             <div className='empty-state'>
-            <div className='empty-icon'></div>
+            <div className='empty-icon'>🫙</div>
              <p className='empty-text'>
                 Ready to recive some terrible advice?
              </p>
                 </div>
            )}
         </div>
-        <div className='advice-actions'>
-            <button
-             className='btn btn-primary generate-btn'
-             onClick={onGenerateAdvice}
-             disabled={isGenerating}
-             aria-label='Generate new advice'>
-                {isGenerating ? (
-                    <>
-                   
-                    </>
-                ):(
-                    'Generate Advice'
-                )}
-
-
-             </button>
-        </div>
+       <div className="advice-actions">
+                    <button
+                        className='btn btn-primary generate-btn'
+                        onClick={onGenerateAdvice}
+                        disabled={isGenerating}
+                        aria-label="Generate new advice"
+                    >
+                        {isGenerating ? (
+                            <>
+                            <span className='btn-spinner'></span>
+                            Generating...
+                            </>
+                        ) : (
+                            <>
+                               <span className='btn-icon'>💎</span>
+                               Give Me Terrible Advice!
+                            </>
+                        ) }
+                    </button>
+                    {advice && !isGenerating &&(
+                        <button
+                        className='btn btn-secondary reset-btn animate-slide-in'
+                        onClick={onReset}
+                        aria-label='Reset advice'
+                        >
+                        <span className='btn-icon'>🔄</span>
+                        Try Again
+                        </button>
+                    )}
+                </div>
         </div>
     )
 }
