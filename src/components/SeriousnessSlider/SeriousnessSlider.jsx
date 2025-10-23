@@ -7,10 +7,10 @@ const SeriousnessSlider =({seriousnessLevel, onSeriousnessChange})=>{
     }
    const getSliderColor = (level)=>{
     const colors = {
-         [SERIOUSNESS_LEVELS.MILD]: '#10b981',
-         [SERIOUSNESS_LEVELS.MODERATE]: '#f59E9B',
-         [SERIOUSNESS_LEVELS.SERVE]: '#ef4444',
-         [SERIOUSNESS_LEVELS.UNHINGED]: '#8b5cf6',
+         [SERIOUSNESS_LEVELS.MILD]:' #10b981',
+         [SERIOUSNESS_LEVELS.MODERATE]:' #f59E9B',
+         [SERIOUSNESS_LEVELS.SERVE]:' #ef4444',
+         [SERIOUSNESS_LEVELS.UNHINGED]:' #8b5cf6',
     };
     return colors[level] || colors[SERIOUSNESS_LEVELS.MILD];
    };
